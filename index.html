@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <title>Guess my number</title>
+    <style>
+        .correct {
+            color: green;
+        }
+
+        .wrong {
+            font-family: "Gloria Hallelujah", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Guess my number</h1>
+    <p>I have a number between 1 and 100. Can you guess what it is in as few attempts as possible?</p>
+    <div id="output"></div>
+    <input type="number" min="0" id="guessedNumber">
+    <button id="makeGuessButton">Guess</button>
+    <button id="playAgain" hidden=true>Play Again?</button>
+
+    <script src="game.mjs"></script>
+
+</body>
+
+</html>
